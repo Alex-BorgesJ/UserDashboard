@@ -3,12 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div class="container-fluid">
+        <h1 class="h3 mb-2 text-gray-800">Listar</h1>
+        <form id="form1" runat="server">
 
-    <form id="form1" runat="server">
-
-        <div class="card-body shadow-lg">
-            <div class="table-responsive">
-                <asp:gridview id="GridView" runat="server" autogeneratecolumns="False" onrowcommand="GridView_RowCommand" class="table table-bordered">
+            <div class="card-body shadow-lg">
+                <div class="table-responsive">
+                    <asp:gridview id="GridView" runat="server" autogeneratecolumns="False" onrowcommand="GridView_RowCommand" class="table table-bordered">
             <Columns>
                 <asp:BoundField HeaderText="Nome" DataField="fun_nome" />
                 <asp:BoundField HeaderText="Salário" DataField="fun_salario" />
@@ -25,8 +26,10 @@
                 </asp:TemplateField>
             </Columns>
         </asp:gridview>
+                </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
+
 </asp:Content>
 

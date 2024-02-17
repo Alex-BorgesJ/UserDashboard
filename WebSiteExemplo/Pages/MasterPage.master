@@ -25,7 +25,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="Cadastrar.aspx">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<%= UrlNav("UserDashboard.aspx") %>">
                 <div class="sidebar-brand-text mx-3">Sistema</div>
             </a>
 
@@ -33,15 +33,38 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="Cadastrar.aspx">
-                    <i class="fas fa-fw fa-book"></i>
-                    <span>Cadastro</span></a>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCadastro"
+                    aria-expanded="true" aria-controls="collapseCadastro">
+                    <i class="fas fa-fw fa-bars"></i>
+                    <span>Cadastro</span>
+                </a>
+                <div id="collapseCadastro" class="collapse show" aria-labelledby="headingCadastro" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<%= UrlNav("Cadastro/Cadastrar.aspx") %>"><i class="fas fa-fw fa-pen"></i>Cadastrar</a>
+                        <a class="collapse-item" href="<%= UrlNav("Cadastro/Listar.aspx") %>"><i class="fas fa-fw fa-book"></i>Lista</a>
+                    </div>
+                </div>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="Listar.aspx">
-                    <i class="fas fa-fw fa-folder-open"></i>
-                    <span>Listar</span></a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseHeranca"
+                    aria-expanded="true" aria-controls="collapseHeranca">
+                    <i class="fas fa-fw fa-bars"></i>
+                    <span>Herança</span>
+                </a>
+                <div id="collapseHeranca" class="collapse show" aria-labelledby="headingHeranca" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<%= UrlNav("Heranca/CadastrarEng.aspx") %>"><i class="fas fa-fw fa-pen"></i>Cadastrar Engenheiro</a>
+                        <a class="collapse-item" href="<%= UrlNav("Heranca/CadastrarPilo.aspx") %>"><i class="fas fa-fw fa-pen"></i>Cadastrar Piloto</a>
+                        <a class="collapse-item" href="<%= UrlNav("Heranca/ListarEng.aspx") %>"><i class="fas fa-fw fa-book"></i>Lista de Engenheiros</a>
+                        <a class="collapse-item" href="<%= UrlNav("Heranca/ListarPilo.aspx") %>"><i class="fas fa-fw fa-book"></i>Lista de Pilotos</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Divider -->
@@ -128,14 +151,14 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="../js/sb-admin-2.min.js"></script>
+    <script src="../../js/sb-admin-2.min.js"></script>
 
 </body>
 </html>

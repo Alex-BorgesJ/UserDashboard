@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Pages_MasterPage : System.Web.UI.MasterPage
+public partial class Pages_UserDashboard : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -14,7 +14,6 @@ public partial class Pages_MasterPage : System.Web.UI.MasterPage
 
     protected string UrlNav(string url)
     {
-         
-        return ResolveUrl("~/Pages/" + url); 
+        return ResolveUrl("~/Pages/" + url);
     }
 }

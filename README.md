@@ -18,14 +18,7 @@ WebSiteExemplo é uma aplicação web simples para gerenciar informações de fu
 - Frameworks: ASP.NET
 
 ## Criação do Banco de Dados
-  CREATE DATABASE esbd;
-  USE esbd;
-  CREATE TABLE tbl_funcionario (
-    fun_codigo INT PRIMARY KEY,
-    fun_nome VARCHAR(255),
-    fun_salario DECIMAL(10, 2),
-    fun_cracha INT
-  );
+  Para criar o banco de dados necessário para utilizar o projeto, basta acessar o arquivo script.sql. Este arquivo contém todas as instruções de criação das tabelas e estruturas requeridas. Você pode executá-lo diretamente ou visualizar as instruções para configurar o banco de dados conforme necessário.
 
 ## Configuração do Banco de Dados
 

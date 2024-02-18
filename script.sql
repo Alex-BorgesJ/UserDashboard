@@ -17,3 +17,11 @@ CREATE TABLE IF NOT EXISTS tbl_membro(
     mem_altura DECIMAL(6,2),
     mem_peso DECIMAL(6,2)
 );
+
+CREATE TABLE IF NOT EXISTS tbl_pessoa(
+    pes_id INT PRIMARY KEY AUTO_INCREMENT UNIQUE,
+    pes_nome VARCHAR(255) NOT NULL,
+    pes_email VARCHAR(255) NOT NULL UNIQUE,
+    pes_senha VARCHAR(255) NOT NULL,
+    pes_tipo INT(11) NOT NULL
+);

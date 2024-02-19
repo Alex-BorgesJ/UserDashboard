@@ -68,6 +68,22 @@
             </li>
 
             <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLogin"
+                    aria-expanded="true" aria-controls="collapseLogin">
+                    <i class="fas fa-fw fa-bars"></i>
+                    <span>Login</span>
+                </a>
+                <div id="collapseLogin" class="collapse show" aria-labelledby="headingLogin" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<%= UrlNav("Login/Login.aspx") %>"><i class="fas fa-fw fa-pen"></i>Login</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
             <!-- Sidebar Toggler (Sidebar) -->

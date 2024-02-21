@@ -19,17 +19,19 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Bem vindo de volta!</h1>
                                     </div>
-                                    <form class="user">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Digite seu email...">
+                                    <form class="user" runat="server">
+                                        <div class="text-center text-danger my-2" role="alert">
+                                            <asp:Label ID="lblMensagem" Text="" runat="server"></asp:Label>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Senha">
+                                            <asp:Label ID="lblEmail" Text="Email" runat="server"></asp:Label>
+                                            <asp:TextBox class="form-control" ID="txtEmail" runat="server"></asp:TextBox>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">Login</a>
+                                        <div class="form-group">
+                                            <asp:Label ID="lblSenha" Text="Senha" runat="server"></asp:Label>
+                                            <asp:TextBox class="form-control" ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
+                                        </div>
+                                        <asp:Button class="btn btn-primary btn-block" ID="btnLogin" Text="Entrar" runat="server" OnClick="btnLogin_Click" />
                                         <hr>
                                     </form>
                                 </div>

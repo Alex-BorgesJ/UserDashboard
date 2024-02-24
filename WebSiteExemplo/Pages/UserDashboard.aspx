@@ -94,7 +94,20 @@
                                 <p>Ao clicar neste link, você acessará uma página que apresenta uma lista completa de todos os pilotos cadastrados. Através do uso da herança de classes, podemos garantir uma organização adequada dos registros de pilotos, facilitando a sua visualização e gerenciamento</p>
                             </td>
                         </tr>
-                        <!-- Inicio Sessão Herança -->
+                        <!-- Fim Sessão Herança -->
+                        <!-- Inicio Sessão Login -->
+                        <tr>
+                            <td rowspan="1" class="align-middle">
+                                <h6>LOGIN</h6>
+                            </td>
+                            <td>
+                                <a class="d-block text-center" href="<%= UrlNav("Login/Login.aspx")  %>">Login</a>
+                            </td>
+                            <td>
+                                <p>Este link direciona para uma página onde é possível interagir com uma interface de login. Por favor, utilize um email e senha válidos (por favor, cadastre tais dados dentro do seu banco de dados). Na página, você encontrará uma interface com design voltado para administradores, assim como outra destinada aos clientes</p>
+                            </td>
+                        </tr>                        
+                        <!-- Fim Sessão Login -->
 
                     </tbody>
                 </table>

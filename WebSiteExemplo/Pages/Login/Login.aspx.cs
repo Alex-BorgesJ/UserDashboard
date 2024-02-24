@@ -11,7 +11,7 @@ public partial class Pages_Login_Login : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        
     }
 
     private bool IsPreenchido(string str)
@@ -70,5 +70,6 @@ public partial class Pages_Login_Login : System.Web.UI.Page
             default:
                 break;
         }
-    }
+    }
+
 }
